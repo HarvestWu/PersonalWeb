@@ -1,20 +1,35 @@
 #app{
 
 }
+a{
+    color: white;
+}
 .layout{
-    border: 1px solid #d7dde4;
-    background: #f5f7f9;
+    background: #eaf1f4;
     position: relative;
-
+    min-height: 100vh;
+    border: none;
+}
+.layout-text{
+    font-size: 16px;
 }
 .layout-ceiling{
-    background: #d7dde4;
-    padding: 20px 0;
+    background-color: white;
+    padding: 10px 0;
     overflow: hidden;
+    height: 6vh;
+}
+.layout-ceiling-left{
+    float: left;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-family: 方正舒体,serif;
 }
 .layout-ceiling-main{
     float: right;
     margin-right: 15px;
+    font-size: 18px;
 }
 .layout-ceiling-main a{
     color: #9ba7b5;
@@ -22,49 +37,102 @@
 .layout-breadcrumb{
     padding: 10px 15px 0;
 }
-.layout-title{
-    width: 80px;
-    height: 30px;
+.layout-logo-left{
+    width: 90%;
+    height: 120px;
+    border-radius: 3px;
+    margin: 20px auto;
+}
+.ivu-avatar-large{
+    width: 90px;
+    height: 90px;
+    line-height: 80px;
+    border-radius: 45px;
+}
+.ivu-avatar-small{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+}
+.user-face{
     margin: 10px auto;
-    padding: auto;
-    font-size: 18px;
+    text-align: center;
+}
+.small-userName{
     color: white;
+    text-align: center;
+    font-size: 12px;
+}
+.large-userName{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+.layout-right{
+    height: 3vh;
 }
 .layout-content{
-    min-height: 400px;
-    margin: 15px;
+    min-height: 80vh;
+    margin: 2px;
     overflow: hidden;
     background: #fff;
     border-radius: 4px;
 }
+.right-iframe{
+    min-height: 80vh;
+}
 .layout-content-main{
     padding: 10px;
-}
+   }
 .layout-copy{
     text-align: center;
-    padding: 10px 0 20px;
+    padding: 1vh 0 2vh;
     color: #9ea7b4;
+    font-size: 14px;
+    height: 4vh;
 }
 .layout-menu-left{
     background: #464c5b;
-    min-height: 100vh;
+    min-height: 94vh;
 }
 .layout-header{
     height: 60px;
-    background: #fff;
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
 }
-.layout-logo-left{
-    width: 90%;
-    height: 50px;
-    border-radius: 3px;
-    margin: 15px auto;
-    background-color: #9ea7b4;
-}
+
+
 .layout-hide-text .layout-text{
     display: none;
 
 }
+.layout-hide-text .ivu-icon-ios-arrow-down{
+    display: none;
+}
 .vue-col{
     transition: width .2s ease-in-out;
+}
+
+
+
+/*个人信息页面*/
+.personal-information{
+    min-height: 100vh;
+    background-color: #9ba7b5;
+}
+.ceiling-top{
+    overflow: hidden;
+    height:60px;
+}
+.ceiling-left{
+    float: left;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-family: 方正舒体, serif;
+}
+.ceiling-bottom{
+    margin: 15px 16vh;
+    background-color: #eaf1f4;
+    padding-top: 20px;
 }

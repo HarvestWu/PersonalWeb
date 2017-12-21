@@ -4,9 +4,10 @@
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="2">
+          <list size="3">
             <item index="0" class="java.lang.String" itemvalue="slot" />
             <item index="1" class="java.lang.String" itemvalue=":class" />
+            <item index="2" class="java.lang.String" itemvalue="@click" />
           </list>
         </value>
       </option>
@@ -15,7 +16,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="15">
+          <list size="27">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -31,6 +32,18 @@
             <item index="12" class="java.lang.String" itemvalue="breadcrumb" />
             <item index="13" class="java.lang.String" itemvalue="i-menu" />
             <item index="14" class="java.lang.String" itemvalue="i-button" />
+            <item index="15" class="java.lang.String" itemvalue="avatar" />
+            <item index="16" class="java.lang.String" itemvalue="i-form" />
+            <item index="17" class="java.lang.String" itemvalue="form-item" />
+            <item index="18" class="java.lang.String" itemvalue="i-input" />
+            <item index="19" class="java.lang.String" itemvalue="i-select" />
+            <item index="20" class="java.lang.String" itemvalue="i-option" />
+            <item index="21" class="java.lang.String" itemvalue="date-picker" />
+            <item index="22" class="java.lang.String" itemvalue="radio-group" />
+            <item index="23" class="java.lang.String" itemvalue="checkbox-group" />
+            <item index="24" class="java.lang.String" itemvalue="checkbox" />
+            <item index="25" class="java.lang.String" itemvalue="radio" />
+            <item index="26" class="java.lang.String" itemvalue="time-picker" />
           </list>
         </value>
       </option>

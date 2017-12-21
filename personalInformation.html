@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息</title>
+    <link rel="stylesheet" href="//unpkg.com/iview/dist/styles/iview.css">
+    <link rel="stylesheet" href="static/css/admin.css">
+</head>
+<body >
+<div id="personal-information" class="personal-information">
+    <div class="ceiling-top">
+        <div class="ceiling-left">基本信息</div>
+    </div>
+    <div  class="ceiling-bottom">
+        <row>
+            <i-col span="12" offset="3">
+                <i-form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
+                    <form-item label="Name" prop="name">
+                        <i-input v-model="formValidate.name" placeholder="Enter your name"></i-input>
+                    </form-item>
+                    <form-item label="E-mail" prop="mail">
+                        <i-input v-model="formValidate.mail" placeholder="Enter your e-mail"></i-input>
+                    </form-item>
+                    <form-item label="City" prop="city">
+                        <i-select v-model="formValidate.city" placeholder="Select your city">
+                            <i-option value="beijing">New York</i-option>
+                            <i-option value="shanghai">London</i-option>
+                            <i-option value="shenzhen">Sydney</i-option>
+                        </i-select>
+                    </form-item>
+                    <form-item label="Date">
+                        <row>
+                            <i-col span="11">
+                                <form-item prop="date">
+                                    <date-picker type="date" placeholder="Select date" v-model="formValidate.date"></date-picker>
+                                </form-item>
+                            </i-col>
+                        </row>
+                    </form-item>
+                    <form-item label="Gender" prop="gender">
+                        <radio-group v-model="formValidate.gender">
+                            <radio label="male">Male</radio>
+                            <radio label="female">Female</radio>
+                        </radio-group>
+                    </form-item>
+                    <form-item label="Hobby" prop="interest">
+                        <checkbox-group v-model="formValidate.interest">
+                            <checkbox label="Eat"></checkbox>
+                            <checkbox label="Sleep"></checkbox>
+                            <checkbox label="Run"></checkbox>
+                            <checkbox label="Movie"></checkbox>
+                        </checkbox-group>
+                    </form-item>
+                    <form-item label="Desc" prop="desc">
+                        <i-input v-model="formValidate.desc" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="Enter something..."></i-input>
+                    </form-item>
+                    <form-item>
+                        <i-button type="primary" @click="handleSubmit('formValidate')">Submit</i-button>
+                        <i-button type="ghost" @click="handleReset('formValidate')" style="margin-left: 8px">Reset</i-button>
+                    </form-item>
+                </i-form>
+            </i-col>
+        </row>
+    </div>
+</div>
+
+<script src="//vuejs.org/js/vue.min.js"></script>
+<script src="//unpkg.com/iview/dist/iview.min.js"></script>
+<script src="static/js/admin.js" type="text/javascript"></script>
+</body>
+</html>
